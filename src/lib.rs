@@ -91,8 +91,8 @@ impl Searchable for EnglishDictionary {
 
         // finish up, above is a clipboard example
     }
-    fn plugin_id(&self) -> &PluginId {
-        &self.id
+    fn plugin_id(&self) -> PluginId {
+        self.id.clone()
     }
 }
 
